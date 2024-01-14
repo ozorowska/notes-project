@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@200;400&display=swap");
+    </style>
+    <title>Registration</title>
+  </head>
+  <body>
+    <a href="/" class="home-icon">
+      <img src="/images/home_1946488.png" alt="Home" width="24" height="24" />
+    </a>
+
+    <div class="container">
+      <h2>Registration</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">
+            <img src="/images/user.svg" alt="Name" width="20" height="20" />
+          </label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <img
+              src="/images/email_4546924.png"
+              alt="Email"
+              width="20"
+              height="20"
+            />
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <img
+              src="/images/padlock_2889676.png"
+              alt="Password"
+              width="20"
+              height="20"
+            />
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">
+            <img
+              src="/images/padlock_2889676.png"
+              alt="Confirm Password"
+              width="20"
+              height="20"
+            />
+          </label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <p>
+        Already have an account?
+        <a href="/login">Login here</a>
+      </p>
+    </div>
+
+    <script src="/scripts/auth.js"></script>
+  </body>
+</html>

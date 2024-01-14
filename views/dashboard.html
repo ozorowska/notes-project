@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/notes.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <p id="hello-user"></p>
+    <button id="logoutButton">Logout</button>
+
+    <div class="popup-box" id="addNotePopup">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Add a new note!</p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <div class="row description">
+              <label>Your note</label>
+              <textarea></textarea>
+            </div>
+            <button>Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup-box" id="editNotePopup">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Edit Note</p>
+            <i class="uil uil-times" id="editClose"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" id="editTitle" />
+            </div>
+            <div class="row description">
+              <label>Your note</label>
+              <textarea id="editContent"></textarea>
+            </div>
+            <button id="editButton" onclick="saveEditedNote()">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Add a new note</p>
+      </li>
+    </div>
+    <script src="/scripts/notes.js"></script>
+  </body>
+</html>
